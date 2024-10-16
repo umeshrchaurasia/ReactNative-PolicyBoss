@@ -55,17 +55,116 @@ const Inquiries = () => {
                     placeholder='contactName'
                     textInputWrapperStyle={getWrapperStyle('company')}
                 />
+
+
+                <NexusTextInput
+                    inputKey="streetAddress"
+                    value={contactData.streetAddress}
+                    // maxLength={15}
+                    onChangeText={onChangeText}
+                    onFocus={() => handleFocus('streetAddress')}
+                    onBlur={() => handleBlur('streetAddress')}
+                    keyboardType="default"
+                    placeholder="Street Address"
+                    textInputWrapperStyle={getWrapperStyle('streetAddress')}
+                />
+                <NexusTextInput
+                    inputKey="city"
+                    value={contactData.city}
+                    // maxLength={15}
+                    onChangeText={onChangeText}
+                    onFocus={() => handleFocus('city')}
+                    onBlur={() => handleBlur('city')}
+                    keyboardType="default"
+                    placeholder="City"
+                    textInputWrapperStyle={getWrapperStyle('city')}
+                />
+
+                <NexusTextInput
+                    inputKey="country"
+                    value={contactData.country}
+                    // maxLength={15}
+                    onChangeText={onChangeText}
+                    onFocus={() => handleFocus('country')}
+                    onBlur={() => handleBlur('country')}
+                    keyboardType="default"
+                    placeholder="Country*"
+                    textInputWrapperStyle={getWrapperStyle('country')}
+                    errorStyle={showCountryError ? styles.errorMessageStyle : {}}
+                    showErrorField={showCountryError}
+                    errorMessage={error.country}
+                />
+
+                <NexusTextInput
+                    inputKey="emailAddress"
+                    value={contactData.emailAddress}
+                    onChangeText={onChangeText}
+                    onFocus={() => handleFocus('emailAddress')}
+                    onBlur={() => handleBlur('emailAddress')}
+                    keyboardType="email-address"
+                    placeholder="Email Address*"
+                    textInputWrapperStyle={getWrapperStyle('emailAddress')}
+                    errorStyle={showEmailError ? styles.errorMessageStyle : {}}
+                    showErrorField={showEmailError}
+                    errorMessage={error.emailAddress}
+                />
+                <NexusPhoneInput
+                    value={contactData.phoneNumber}
+                    formattedValue={formattedValue}
+                    onChangeFormattedText={onChangeFormattedText}
+                    onChangeText={onChangePhoneNumber}
+                    phoneInputRef={phoneInputRef}
+                    onFocus={() => handleFocus('phoneNumber')}
+                    onBlur={() => handleBlur('phoneNumber')}
+                    // onEndEditing={onEndEditing}
+                    PhoneInputWrapperStyle={getWrapperStyle('phoneNumber')}
+                    errorStyle={showPhoneNumberError ? styles.phoneErroStyle : {}}
+                    showErrorField={showPhoneNumberError}
+                    errorMessage={error.phoneNumber}
+                    maxLength={20}
+                />
+                <NexusTextInput
+                    inputKey="items"
+                    value={contactData.items}
+                    onChangeText={onChangeText}
+                    // maxLength={30}
+                    onFocus={() => handleFocus('items')}
+                    onBlur={() => handleBlur('items')}
+                    keyboardType="default"
+                    placeholder="Items"
+                    textInputWrapperStyle={getWrapperStyle('items')}
+                />
+                <NexusTextInput
+                    inputKey="inquiryDetails"
+                    value={contactData.inquiryDetails}
+                    onChangeText={onChangeText}
+                    onFocus={() => handleFocus('inquiryDetails')}
+                    onBlur={() => handleBlur('inquiryDetails')}
+                    keyboardType="default"
+                    placeholder="Inquiry Details"
+                    multiline
+                    textInputStyle={styles.multiLineTextInput}
+                    textInputWrapperStyle={{
+                        ...styles.multiLineInputWrapper,
+                        ...getWrapperStyle('inquiryDetails'), // Spread the style object
+                    }}
+                />
+
+                <TouchableOpacity
+                onPress={onSubmit} style={styles.submitBtn}>
+                    <Text style={styles.submitText}>{'Submit'}</Text>
+                </TouchableOpacity>
             </View>
         )
     }
 
-    const headerContact =()=>{
-        return(
+    const headerContact = () => {
+        return (
             <ImageBackground
-            source={require('../../assets/images/contact-us.jpg')}
-            resizeMode='cover'
-            style={styles.headerImageBackground}>
-              <Text style={styles.text}>{'Inquiries'}</Text>    
+                source={require('../../assets/images/contact-us.jpg')}
+                resizeMode='cover'
+                style={styles.headerImageBackground}>
+                <Text style={styles.text}>{'Inquiries'}</Text>
             </ImageBackground>
         );
     };

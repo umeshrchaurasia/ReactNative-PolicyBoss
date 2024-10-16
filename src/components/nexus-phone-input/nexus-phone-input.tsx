@@ -1,10 +1,10 @@
 import {View, StyleSheet} from 'react-native';
 import React from 'react';
 import PhoneInput from 'react-native-phone-number-input';
-import {Colors, Fonts, Size} from '../../constants/constants';
+import {Colors, Fonts, Size} from '../../utility/constants';
 import {NexusPhoneInputProps} from '../../types/components';
 import * as Animatable from 'react-native-animatable';
-import {hdp} from '../../utils/utility';
+import {hdp} from '../../utility/utility';
 
 const NexusPhoneInput = (props: NexusPhoneInputProps) => {
   const {
