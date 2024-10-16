@@ -3,13 +3,14 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import Home from '../screens/home/Home';
 import Notifications from '../screens/notifications/Notifications';
-import Profile from '../screens/profile/Profile';
+import Inquiries from '../screens/inquiries/Inquiries';
 import MyMenu from '../screens/myMenu/MyMenu';
 import {Colors, Fonts} from '../utility/constants';
 import HomeIcon from '../assets/svg/home-icon';
 import UpdateIcon from '../assets/svg/update-icon';
 
 
+import { Ionicons } from '@expo/vector-icons';
 
 import InquiriesIcon from '../assets/svg/inquiries-icon';
 import ContactUsIcon from '../assets/svg/contact-us-icon';
@@ -34,10 +35,8 @@ const BottomStack = () => {
         tabBarInactiveTintColor: Colors.phillipineGrey,
         tabBarActiveTintColor: Colors.primary,
         tabBarLabelStyle: styles.tabBarLabel,
-        tabBarStyle: styles.tabBarStyle,
-        tabBarAndroidRipple: {borderless: false},
-        animationEnabled: true,
-        tabBarIndicatorStyle: styles.tabBarIndicator,
+        tabBarStyle: styles.tabBarStyle, 
+       
       }}>
       <Tab.Screen name="Home" component={Home} options={{
         tabBarLabel:'Home',tabBarIcon:({color})=>{
@@ -48,10 +47,10 @@ const BottomStack = () => {
       options={{
         tabBarLabel: 'Notifications',
         tabBarIcon: ({color}) => {
-          return <UpdateIcon activeColor={color} />;
+          return <UpdateIcon width={20} activeColor={color} />;
         },
       }}/>
-      <Tab.Screen name="Profile" component={Profile} 
+      <Tab.Screen name="Inquiries" component={Inquiries} 
         options={{
           tabBarLabel: 'Inquiries',
           tabBarIcon: ({color}) => {

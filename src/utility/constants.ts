@@ -118,6 +118,48 @@ const getFonts = (fontFamily: string, fontSize: number): TextStyle => ({
     robotoTextThin23: getFonts('Roboto-Thin', 23),
     robotoTextThin24: getFonts('Roboto-Thin', 24),
     
+
+    //bold
+    poppinsTextBold16: getFonts("Poppins-Bold", 16),
+    poppinsTextBold18: getFonts("Poppins-Bold", 18),
+    poppinsTextBold12: getFonts("Poppins-Bold", 12),
+    poppinsTextBold14: getFonts("Poppins-Bold", 14),
+    poppinsTextBold10: getFonts("Poppins-Bold", 10),
+    poppinsTextBold20: getFonts("Poppins-Bold", 20),
+    poppinsTextBold21: getFonts("Poppins-Bold", 21),
+    poppinsTextBold22: getFonts("Poppins-Bold", 22),
+    poppinsTextBold23: getFonts("Poppins-Bold", 23),
+    poppinsTextBold24: getFonts("Poppins-Bold", 24),
+    poppinsTextBold25: getFonts("Poppins-Bold", 25),
+    poppinsTextBold26: getFonts("Poppins-Bold", 26),
+    poppinsTextBold27: getFonts("Poppins-Bold", 27),
+    poppinsTextBold28: getFonts("Poppins-Bold", 28),
+    poppinsTextBold38: getFonts("Poppins-Bold", 38),
+    //regular
+    poppinsTextRegular10: getFonts("Poppins-Regular", 10),
+    poppinsTextRegular12: getFonts("Poppins-Regular", 12),
+    poppinsTextRegular16: getFonts("Poppins-Regular", 16),
+    poppinsTextRegular14: getFonts("Poppins-Regular", 14),
+    poppinsTextRegular18: getFonts("Poppins-Regular", 18),
+    poppinsTextRegular24: getFonts("Poppins-Regular", 24),
+    //medium
+    poppinsTextMedium8: getFonts("Poppins-Medium", 8),
+    poppinsTextMedium10: getFonts("Poppins-Medium", 10),
+    poppinsTextMedium12: getFonts("Poppins-Medium", 12),
+    poppinsTextMedium16: getFonts("Poppins-Medium", 16),
+    poppinsTextMedium18: getFonts("Poppins-Medium", 18),
+    poppinsTextMedium14: getFonts("Poppins-Medium", 14),
+    //semi bold
+  
+    poppinsTextSemibold8: getFonts("Poppins-SemiBold", 8),
+    poppinsTextSemibold10: getFonts("Poppins-SemiBold", 10),
+    poppinsTextSemibold12: getFonts("Poppins-SemiBold", 12),
+    poppinsTextSemibold14: getFonts("Poppins-SemiBold", 14),
+    poppinsTextSemibold16: getFonts("Poppins-SemiBold", 16),
+    poppinsTextSemibold18: getFonts("Poppins-SemiBold", 18),
+    poppinsTextSemibold20: getFonts("Poppins-SemiBold", 20),
+    poppinsTextSemibold22: getFonts("Poppins-SemiBold", 22),
+    poppinsTextSemibold26: getFonts("Poppins-SemiBold", 26),
   };
 
   const Colors = {

@@ -18,8 +18,7 @@ import { Dimensions } from "react-native";
    *function will convert the given height percentage into density pixels
    * @method hdp
    * @param value number
-   * @returns number
-   * @author rehan ansari
+  
    * 
    */
   const hdp=(value:number):number=>{

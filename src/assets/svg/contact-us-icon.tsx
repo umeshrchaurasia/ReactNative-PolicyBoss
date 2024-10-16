@@ -6,6 +6,13 @@ export interface ISvgProps {
   xmlnsXlink?: string;
   xlinkHref?: string;
   activeColor?: string;
+
+  enableBackground?: string;
+  xmlSpace?: string;
+  iconWidth?: number;
+  iconHeight?: number;
+  width?: number;
+  height?: number;
 }
 
 const ContactUsIcon = (props: ISvgProps) => (
@@ -13,6 +20,11 @@ const ContactUsIcon = (props: ISvgProps) => (
     id="Layer_1"
     data-name="Layer 1"
     // xmlns="http://www.w3.org/2000/svg"
+  
+    x="0px"
+    y="0px"
+    width="115.031px"
+    height="122.88px"
     viewBox="0 0 122.88 84.04"
     {...props}>
     <Path
